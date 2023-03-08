@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UFT-8"/>
+<title> </title>
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="javabar.js"></script>
+</head>
+<body onload="startTime()">
+
+<div id="txt" class="clockStyle"></div>
+<header> 
+	<div class="wrapper">
+		<a href="zs.html">
+		<img src="zebra.jpg"  alt="zebra logo">
+		</a>
+		<nav>
+			<ul>
+			<li><a href="index.html">Početna</a></li>
+			<li><a href="zs.html">Zebrini snovi</a></li>
+			<li><a href="ml.html">Životopis</a></li>
+			<li><a href="knt.html">Kontakt</a></li>
+			<li><a href="ank.html">Anketa</a></li>
+			<li><a href="naslovnica.php">Prijava</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section>
+	<div class="form-box">
+
+		<div class="wrapper">
+			<h1>ANKETA <br/><br/></h1>
+			<form action = "form.php" method = "get" > 
+				<input type="text" name="first" placeholder="Ime">
+				<br><br>
+				<input type="text" name="last" placeholder="Prezime">
+				</br> <br>
+				<input class="form-radio" type="radio" name="gender" value="female"><p>Žensko</p>
+				<br>
+				<input class="form-radio" type="radio" name="gender" value="male"> <p>Muško</p>
+				<br><br><br><br></br></br>
+				Odaberite grad iz kojeg dolazite? <br><br>
+				<select name = "city">
+					<option value = "Osijek"> Osijek </option>
+					<option value = "Zagreb"> Zagreb </option>
+					<option value = "Rijeka"> Rijeka </option>
+					<option value = "Split"> Split </option>
+					<option value = "Dubrovnik"> Dubrovnik </option>
+				</select>
+				<br> <br> <br> <br><br><br>
+				Odaberite što Vam se najviše sviđa?
+				<br><br>
+				
+				
+				<input type="checkbox" name="metalne ogrlice" value="ogrlica"> metalne ogrlice</input> <br>
+				<input type="checkbox" name="narukvice" value="narukvice"> narukvice</input> <br>
+				<input type="checkbox" name="ljetne ogrlice" value="ogrlice"> ljetne ogrlice </input> <br>
+				<input type="checkbox" name="chokeri" value="chokeri"> chokeri </input> <br>
+				<input type="checkbox" name="naušnice" value="naušnice"> naušnice </input> <br>
+				<input type="checkbox" name="prstenje" value="prstenje"> prstenje </input> <br><br>
+				
+			
+				
+				<textarea name="message"> Komentar </textarea>
+				<br>
+				<button type="submit">Pošalji</button>
+			</form> 
+		</div>
+	
+	</div>
+
+</section>
+
+
+
+
+<footer>
+	<div class="wrapper">
+		<nav>
+			<ul>
+			<li><a href="index.html">Početna</a></li>
+			<li><a href="zs.html">Zebrini snovi</a></li>
+			<li><a href="ml.html">Životopis</a></li>
+			<li><a href="knt.html">Kontakt</a></li>
+			<li><a href="ank.html">Anketa</a></li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+</body>
+</html>

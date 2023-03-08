@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UFT-8">
+<title> </title>
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="javabar.js"></script>
+	
+</head>
+<body onload="startTime()">
+
+<div id="txt" class="clockStyle"></div>
+<header> 
+	<div class="wrapper">
+		<a href="zs.html">
+		<img src="zebra.jpg"  alt="zebra logo">
+		</a>
+		<nav>
+			<ul>
+			<li><a href="index.html">Početna</a></li>
+			<li><a href="zs.html">Zebrini snovi</a></li>
+			<li><a href="ml.html">Životopis</a></li>
+			<li><a href="knt.html">Kontakt</a></li>
+			<li><a href="ank.html">Anketa</a></li>
+			<li><a href="naslovnica.php">Prijava</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section>
+	<div class="karta-box">
+		<div class="wrapper">
+			<h1>KONTAKT <br/><br/></h1>
+			<h2>Martina Novoselac <br/>
+			Adresa: Sv. Ane 17, 31000 Osijek <br/>
+			Broj mobitela:<a href="tel:+385977971849">097/797-1849</a>
+			<br>
+			E-mail adresa:<a href="mailto:novoselac.martina@gmail.com">novoselac.martina@gmail.com</a>
+			
+			</h2>
+  			<div id="map" style="width:400px; height:300px;"></div>
+		</div>
+	</div>
+	
+    <script>
+
+      function initMap() {
+        var myLatLng = {lat: 45.5564692, lng: 18.6719816};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRXv1N5fkOw33TAoRJFMuUTzOQvl_JftM&callback=initMap">
+    </script>
+	
+	
+</section>
+
+
+
+
+<footer>
+	<div class="wrapper">
+		<nav>
+			<ul>
+			<li><a href="index.html">Početna</a></li>
+			<li><a href="zs.html">Zebrini snovi</a></li>
+			<li><a href="ml.html">Životopis</a></li>
+			<li><a href="knt.html">Kontakt</a></li>
+			<li><a href="ank.html">Anketa</a></li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+</body>
+</html>

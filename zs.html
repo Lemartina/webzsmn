@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UFT-8">
+<title> </title>
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="javabar.js"></script>
+
+
+
+
+
+	
+</head>
+<body onload="startTime()">
+
+<div id="txt" class="clockStyle"></div>
+
+
+
+<header> 
+	<div class="wrapper">
+		<a href="zs.html">
+		<img src="zebra.jpg"  alt="zebra logo">
+		</a>
+		
+
+	
+		<nav>
+			<ul>
+			<li><a href="index.html">Početna</a></li>
+			<li><a href="zs.html">Zebrini snovi</a></li>
+			<li><a href="ml.html">Životopis</a></li>
+			<li><a href="knt.html">Kontakt</a></li>
+			<li><a href="ank.html">Anketa</a></li>
+			<li><a href="naslovnica.php">Prijava</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section>
+
+	<div id ="toggleMenu" onclick="toggleMenu()"></div>
+	
+<nav id="menu">
+		<ul>
+			<li><a href="krunice.html">krunice</a></li>
+			<li><a href="desetice.html">desetice</a></li>
+			<li><a href="metalne ogrlice.html">metalne ogrlice</a></li>
+			<li><a href="ljetne ogrlice.html">ljetne ogrlice</a></li>
+			<li><a href="chokeri.html">chokeri</a></li>
+			<li><a href="naušnice.html">naušnice</a></li>
+			<li><a href="narukvice.html">narukvice</a></li>
+			<li><a href="prstenje.html">prstenje</a></li>
+			<li><a href="adventski vijenci.html">adventski vijenci</a></li>
+		</ul>
+	</nav>
+	
+	<div class="opis-box">
+	</div>
+<!-- tekst -->
+	<div class="index-intro"> 
+		<div class="wrapper">
+			<h1>ZEBRINI SNOVI</h1>
+			<p>Zebrini snovi je naziv za kolelciju nakita i krunica. Sav nakit i krunice su ručno rađeni, vrlo kvalitetno napravljeni i ne mogu se naći nigdje osim u ovoj kolekciji. Nakit i krunice se mogu raditi po narudžbi. Odabriom kategorije na meniju koji se nalazi gore lijevo, možete
+			vidjeti sve što Vas zanima. Narudžbe možete napisati u komentar na stranici <a href="ank.html">Anketa</a> Uživajte u razgledavanju!
+			</p>
+		</div>
+	</div>
+</section>
+<script>
+var toggleStatus = 1;
+	function toggleMenu() {
+	if (toggleStatus == 1){
+	document.getElementById("menu").style.left = "-2400px";
+	toggleStatus = 0;
+	} else if(toggleStatus == 0){
+	document.getElementById("menu").style.left = "0px";
+	toggleStatus = 1;
+	}
+	}
+</script>
+
+<footer>
+	<div class="wrapper">
+		<nav>
+			<ul>
+			<li><a href="index.html">Početna</a></li>
+			<li><a href="zs.html">Zebrini snovi</a></li>
+			<li><a href="ml.html">Životopis</a></li>
+			<li><a href="knt.html">Kontakt</a></li>
+			<li><a href="ank.html">Anketa</a></li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+</body>
+</html>
