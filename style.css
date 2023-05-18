@@ -106,8 +106,7 @@ input, select {
 
 /* moj kod */
 body {
-	background-image: url(tapeta.jpg);
-	background-repeat: ;
+	background-image: url(listovi.jpg);
 	background-position: right top;
 	background-attachment: fixed;
 
@@ -458,7 +457,7 @@ section nav ul li a {
 	height: 40px;
 	font-family: Arial;
 	font-weight: 300;
-	color: black;
+	color: white;
 	text-transform: uppercase;
 		
 }
@@ -477,7 +476,7 @@ section nav ul li {
 #toggleMenu {
 	width: 25px;
 	height: 25px;
-	background-color: black;
+	background-color: white;
 	background-image: url(menu.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
