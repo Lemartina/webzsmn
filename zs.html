@@ -71,16 +71,19 @@
 	</div>
 </section>
 <script>
-var toggleStatus = 1;
+var toggleStatus = 0;
 	function toggleMenu() {
-	if (toggleStatus == 1){
+	if (toggleStatus == 0){
 	document.getElementById("menu").style.left = "-2400px";
-	toggleStatus = 0;
-	} else if(toggleStatus == 0){
-	document.getElementById("menu").style.left = "0px";
 	toggleStatus = 1;
+	} else if(toggleStatus == 1){
+	document.getElementById("menu").style.left = "0px";
+	toggleStatus = 0;
 	}
 	}
+
+
+
 </script>
 
 <footer>
