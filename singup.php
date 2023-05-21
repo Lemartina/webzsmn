@@ -15,7 +15,7 @@ $sql = "insert into korisnici (Ime, Prezime, Adresa, Grad, Email, Lozinka)
  values ('$Ime','$Prezime', '$Adresa', '$Grad', '$Email', '$Lozinka')";
 $result = $conn->query($sql);
 
-header('Location: naslovnica.php');
+header('Location: naslovnica.html');
 
 
 ?>
