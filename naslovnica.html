@@ -1,5 +1,29 @@
 <?php
-include 'dbh.php';
+return $conn = mysqli_connect('Localhost', 'root', '', 'zebrinisnovi');
+
+if (!$conn) {
+	
+	die("Connection failed: " . mysqli_connect_error());
+}
+
+
+$Ime = $_POST['Ime'];
+$Prezime = $_POST['Prezime'];
+$Adresa = $_POST['Adresa'];
+$Grad = $_POST['Grad'];
+$Email = $_POST['Email'];
+$Lozinka = $_POST['Lozinka'];
+
+
+
+$sql = "insert into korisnici (Ime, Prezime, Adresa, Grad, Email, Lozinka)
+ values ('$Ime','$Prezime', '$Adresa', '$Grad', '$Email', '$Lozinka')";
+$result = $conn->query($sql);
+
+header('Location: naslovnica.html');
+
+
+
 ?>
 
 <html>
