@@ -339,7 +339,7 @@ header nav ul li a{
 	
 	
 	.form-box button {
-	width: 80px;
+	width: 100px;
 	height: 30px;
 	background-color: red;
 	border: none;
@@ -427,11 +427,11 @@ z-index: 1000;
 }
 
 	
-/*---moj kod za kartu ne valja----*/
 
 
+/*-- toogle bar--*/
 section nav {
-	height: 370px;
+	height: 400px;
 	width: 200px;
 	background: red;
 	position: fixed;
