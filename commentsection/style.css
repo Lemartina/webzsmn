@@ -1,0 +1,82 @@
+body {
+	background-color: #ddd;
+}
+
+iframe{
+	width: 853px;
+	height: 480px;
+	border: 1px #999 soild;
+	
+}
+
+textarea {
+	width: 400px;
+	height: 100px;
+	background-color: #fff;
+	resize: none;
+}
+
+button {
+	width: 100px;
+	height: 30px;
+	background-color: #282828;
+	color: #fff;
+	font-family: arial;
+	font-weight: 400px;
+	cursor: pointer;
+	margin-bottom: 60px;
+	}
+	
+	.comment-box {
+		width: 815px;
+		padding: 20px;
+		margin-bottom: 4px;
+		background-color: #fff;
+		border-radius: 4px;
+		position: relative;
+	}
+	
+	.comment-box p {
+		font-family: arial;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 100;
+		
+	}
+
+
+	.edit-form { 
+		position:  absolute;
+		top: 0px;
+		right: 0px;
+	 }
+
+.edit-form button {
+	width: 50px;
+	height:  20px;
+	color: #282828;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.delete-form button: hover {
+opacity: 1;
+}
+
+	.delete-form { 
+		position:  absolute;
+		top: 0px;
+		right: 60px;
+	 }
+
+.delete-form button {
+	width: 50px;
+	height:  20px;
+	color: #282828;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.delete-form button: hover {
+opacity: 1;
+}
