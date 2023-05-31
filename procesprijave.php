@@ -27,10 +27,26 @@ if ( ! preg_match('/[0-9]/i', $_POST['password']))
 }
 
 
-if ( $_POST['password'] !== $_POST['password_confirmation'])
-{
-    die (' Lozinke se moraju podudarati');
+#if ( $_POST['password'] !== $_POST['password_confirmation'])
+#{
+ #   die (' Lozinke se moraju podudarati');
+#}
+
+
+$password_hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+$mysqli = require __DIR__ . '/bazapodataka.php';
+
+
+$sql = " INSERT INTO  user ( name, email, password_hash)
+VALUES (?, ?, ?)";
+
+$stmt = $mysqli ->stmt_init();
+
+if ( ! $stmt->prepare ($sql)){
+    die ('SQL error: '. $mysqli);
 }
 
 
 print_r($_POST);
+var_dump(password_hash);
