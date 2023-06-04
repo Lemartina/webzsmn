@@ -9,8 +9,7 @@ if ( ! filter_var($_POST ['email'], FILTER_VALIDATE_EMAIL)) {
     die ('Email je potrebno unijeti u ispravnom formatu');
 }
 
-if (strlen($_POST['password']) < 8)
-{
+if (strlen($_POST['password']) < 8){
     die ('Lozinka ne smije biti kraća od 8 znakova');
 }
 
@@ -27,26 +26,29 @@ if ( ! preg_match('/[0-9]/i', $_POST['password']))
 }
 
 
-#if ( $_POST['password'] !== $_POST['password_confirmation'])
-#{
- #   die (' Lozinke se moraju podudarati');
-#}
-
-
 $password_hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 $mysqli = require __DIR__ . '/bazapodataka.php';
 
 
-$sql = " INSERT INTO  user ( name, email, password_hash)
+$sql = "INSERT INTO user(name, email, password_hash)
 VALUES (?, ?, ?)";
 
 $stmt = $mysqli ->stmt_init();
 
-if ( ! $stmt->prepare ($sql)){
-    die ('SQL error: '. $mysqli);
+if ( ! $stmt->prepare($sql)){
+    die ("SQL error: " . $mysqli->error);
+
+
 }
 
 
-print_r($_POST);
-var_dump(password_hash);
+$stmt->bind_param("sss",
+                    $_POST["name"],
+                    $_POST["email"],
+                    $password_hash);
+
+
+$stmt->execute();
+
+echo "prijavljen/a si";
