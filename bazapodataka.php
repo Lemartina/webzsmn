@@ -17,3 +17,72 @@ if ($mysqli -> connect_errno) {
 }
 
 return $mysqli;
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UFT-8'>
+<title> </title>
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' type='text/css' href='style.css'>
+<script src='javabar.js'></script>
+
+
+
+
+
+	
+</head>
+<body onload='startTime()''>
+
+<div id='txt' class='clockStyle'></div>
+
+
+<header> 
+	<div class='wrapper'>
+		<a href='zs.html'>
+		<img src='zebra.jpg'  alt='zebra logo'>
+		</a>
+		
+
+	
+		<nav>
+			<ul>
+			<li><a href="index.html">Početna</a></li>
+			<li><a href="zs.html">Zebrini snovi</a></li>
+			<li><a href="ml.html">Životopis</a></li>
+			<li><a href="knt.html">Kontakt</a></li>
+			<li><a href="ank.html">Anketa</a></li>
+			<li><a href="obrazacprijave.html">Prijava</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	
+	<div class="opis-box">
+	</div>
+
+	<div class="index-intro"> 
+		<div class="wrapper">
+		
+       
+           </form>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="wrapper">
+		<nav>
+			<ul>
+			<li><a href="index.html">Početna</a></li>
+			<li><a href="zs.html">Zebrini snovi</a></li>
+			<li><a href="ml.html">Životopis</a></li>
+			<li><a href="knt.html">Kontakt</a></li>
+			<li><a href="ank.html">Anketa</a></li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+</body>
+</html>
